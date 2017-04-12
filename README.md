@@ -4,4 +4,4 @@ This project is the second project of the Udacity Full Stack Nonodegree Program.
 
 I have refactored the code to include a simple about section along with adding my other projects.
 
-To view the site on github pages go to http://mnarasimhan02.github.io/Portfolio-Site
+To view the site on github pages go to https://mnarasimhan02.github.io/portfolio_site/
