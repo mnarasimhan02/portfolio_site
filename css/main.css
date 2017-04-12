@@ -28,3 +28,10 @@ hr {
 h2 {
 	color: #bcbbbb;
 }
+.imgContainer{
+    float:left;
+}
+
+.portfolio-img {
+	cursor: pointer;
+}

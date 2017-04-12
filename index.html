@@ -1,72 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-	<title>Portfolio Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <title>Portfolio Site</title>
 </head>
+
 <body>
-	<div class="container">
-		<div class="row">
-			<header>
-				<div class="col-md-6 col-sm-4 col-xs-4">
-					<img class="img-responsive logo" src="images/logo1.png" alt="Portfolio Site Logo">
-				</div>
+    <div class="container">
+        <div class="row">
+            <header>
+                <div class="col-md-6 col-sm-4 col-xs-4">
+                    <div class="imgContainer">
+                        <img class="img-responsive logo" src="images/logo1.jpg" alt="Portfolio Site Logo">
+                    </div>
+                    <div class="imgContainer">
+                        <img class="img-responsive logo" src="images/logo2.png" alt="Portfolio Site Logo">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-8 col-sm-8 text-right text-uppercase">
+                    <h1>Mahesh Narasimhan</h1>
+                    <h4> Python | Android | Technical Product Manager</h4>
+                </div>
+            </header>
+        </div>
 
-				<div class="col-md-6 col-sm-8 col-sm-8 text-right text-uppercase">
-					<h1>Mahesh Narasimhan</h1>
-					<h4> Python | Android | Technical Product Manager</h4>
-				</div>
-			</header>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-12">
-			<hr>
-				<img class="img-responsive" src="images/background.jpeg" alt="">
-			</div>
-		</div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+                <img class="img-responsive" src="images/background.png" alt="">
+            </div>
+        </div>
 
-		<div class="row">
-			<div class="col-md-12">
-				<h2>Featured Work</h2>
-			</div>
-			</div>
-			<div class="row text-center">
-			<div class="col-md-4 col-sm-4">
-				<img class="img-responsive" src="http://placehold.it/700x560&amp;text=Image+Coming+Soon" alt="Image Coming Soon">
-				<h3>About</h3>
-				<p></p>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<img class="img-responsive" src="http://placehold.it/700x560&amp;text=Image+Coming+Soon" alt="Image Coming Soon">
-				<h3>WeSport</h3>
-				<p>https://github.com/mnarasimhan02/WeSport</p>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<img class="img-responsive" src="http://placehold.it/700x560&amp;text=Image+Coming+Soon" alt="Image Coming Soon">
-				<h3>Popular Movies</h3>
-				<p>https://github.com/mnarasimhan02/Android-Nano-Degree-Project-2-Popular-Movies-Stage-2</p>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<img class="img-responsive" src="images/kamping-expert.png" alt="Sunshine Watch Face">
-				<h3>Sunshine Watch Face for Android wear</h3>
-				<p>https://github.com/mnarasimhan02/udacity-go-ubiquitous</p>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<img class="img-responsive" src="http://placehold.it/700x560&amp;text=Image+Coming+Soon" alt="Infinite Bikes">
-				<h3>Infinite Bikes</h3>
-				<p>https://github.com/mnarasimhan02/Rails_Shop</p>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<img class="img-responsive" src="http://placehold.it/700x560&amp;text=Image+Coming+Soon" alt="Neighborhood Map">
-				<h3>Neighborhood Map</h3>
-				<p>http://www.github.com</p>
-			</div>
-		</div>
-	</div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Featured Work</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 col-sm-4">
+                <img class="portfolio-img img-responsive" src="images/fullsizeimage.jpg" alt="About" data-toggle="modal" data-target="#aboutmodal">
+                <h3>About</h3>
+                <p></p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <img class="portfolio-img img-responsive" src="images/wesportapp.png" alt="WeSport Screenshot" data-toggle="modal" data-target="#wesportmodal">
+                <h3>WeSport</h3>
+                <p><a href="https://github.com/mnarasimhan02/WeSport">Source Code</a></p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <img class="portfolio-img img-responsive" src="images/popularmovies.png" alt="Popular Movies Screenshot" data-toggle="modal" data-target="#pmoviesmodal">
+                <h3>Popular Movies</h3>
+                <p><a href="https://github.com/mnarasimhan02/Android-Nano-Degree-Project-2-Popular-Movies-Stage-2">Source Code</a></p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <img class="portfolio-img img-responsive" src="images/watchface.png" alt="Sunshine Watchface Screenshot" data-toggle="modal" data-target="#wfacemodal">
+                <h3>Sunshine Watch Face for Android wear</h3>
+                <p><a href="https://github.com/mnarasimhan02/udacity-go-ubiquitous">Source Code</a></p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <img class="portfolio-img img-responsive" src="images/infinite_bikes.png" alt="Infinite Bikes Screenshot" data-toggle="modal" data-target="#bikemodal">
+                <h3>Infinite Bikes</h3>
+                <p><a href="https://infinitestack.herokuapp.com">Preview Project</a></p>
+                <p><a href="https://github.com/mnarasimhan02/Rails_Shop">Source Code</a></p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <img class="portfolio-img img-responsive" src="images/neighborhood_map.jpg" alt="Neighborhood map Screenshot" data-toggle="modal" data-target="#mapmodal">
+                <h3>Neighborhood Map</h3>
+                <p><a href="https://infinitestack.herokuapp.com">Preview Project</a></p>
+                <p><a href="http://www.github.com">Source Code</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- About Modal -->
+    <div class="modal fade about-modal" id="aboutmodal" tabindex="-1" role="dialog" aria-labelledby="aboutModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Hi, my name is Mahesh Narasimhan. While at Udacity.com, I have completed my Android developer nano-degree and Full stack nano-degree acquiring both Web and Mobile development skills to compliment by existing program management skills. Adept at understanding and analyzing new technologies and business processes rapidly with excellent customer facing skills Adept at overseeing both Traditional and Agile projects.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WeSport  Modal -->
+    <div class="modal fade wesport-modal" id="aboutmodal" tabindex="-1" role="dialog" aria-labelledby="wesportModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">WeSport</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="portfolio-img img-responsive" src="images/wesportapp.png" alt="WeSport Screenshot">
+                    <hr>
+                    <p>This project is the captsone project of the Udacity Android-developer Nanodegree Program. The “WeSport” app is an app to coordinate pmoviess around your location. The WeSport app not only helps you find the best play areas, but also helps you create sports events and chat with like-minded players.</p>
+                    <p>This project was built using Firebase (Auth, UI, Realtime database) , uses Loaders, Notifications, Librarries such as Retrofit, Glide, Eventbus.</p>
+                    <p><a href="https://play.google.com/store/apps/details?id=com.my.pmovies.wesport">Download App</a></p>
+                    <p><a href="https://github.com/mnarasimhan02/WeSport">Source Code</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popular Movies  Modal -->
+    <div class="modal fade pmovies-modal" id="pmoviesmodal" tabindex="-1" role="dialog" aria-labelledby="pmoviesModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Popular Movies</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="portfolio-img img-responsive" src="images/popularmovies.png" alt="Popular Movies Screenshot">
+                    <hr>
+                    <p> This app utilizes core Android user interface components and fetches movie information using themoviedb.org web API. The app provides data about popular, highest rated movies, plays videos of the movies and also stores the user's favorite movies </p>
+                    <p> The mobile app uses Core components such as Fragments, Asynctask, Loaders, Sync adapters and Libraries such as Butterknife, Gson, Volley</p>
+                    <p><a href="https://github.com/mnarasimhan02/Android-Nano-Degree-Project-2-Popular-Movies-Stage-2">Source Code</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WatchFace  Modal -->
+    <div class="modal fade wface-modal" id="wfacemodal" tabindex="-1" role="dialog" aria-labelledby="wfaceModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Sunshine Watch Face - Android Wear</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="portfolio-img img-responsive" src="images/watchface.png" alt="Sunshine Watch Face Screenshot">
+                    <hr>
+                    <p>This is an Android Wear WatchFace app. This project extends the Udacity "Sunshine" weather app developed previously during the "Advanced Android Development" course. The Sunshine app synchronizes weather information from OpenWeatherbike on Android Phones and Tablets and sends that to wear.</p>
+                    <p><a href="https://github.com/mnarasimhan02/udacity-go-ubiquitous">Source Code</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Infinite Bikes  Modal -->
+    <div class="modal fade bike-modal" id="bikemodal" tabindex="-1" role="dialog" aria-labelledby="bikeModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Infinite Bikes</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="portfolio-img img-responsive" src="images/infinite_bikes.png" alt="Infinite Bikes Screenshot">
+                    <hr>
+                    <p>This application is an ecoomerce site for buying bikes. User's can select, buy bikes, rate, review and provide comments. The web-app also has an admin interface to add, edit and delete bikes.</p>
+                    <p> The Web-app uses Ruby on Rails Framework, Bootstrap, Javascript, JQuery, User Authentication using OAUTH and Stripe Payment Processing</p>
+                    <p><a href="https://infinitestack.herokuapp.com">Preview Project</a></p>
+                    <p><a href="https://github.com/mnarasimhan02/Rails_Shop">Source Code</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Neighborhood bike Modal -->
+    <div class="modal fade map-modal" id="mapmodal" tabindex="-1" role="dialog" aria-labelledby="mapModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Neighborhood bike</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="portfolio-img img-responsive" src="images/neighborhood_map.jpg" alt="Neighborhood bike Screenshot">
+                    <hr>
+                    <p> This application is under development</p>
+                    <p><a href="http://github.com/">Preview Project</a></p>
+                    <p><a href="http://github.com/">Source Code</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
+</html>
+</body>
+
 </html>
